@@ -1,0 +1,265 @@
+@import url(./global.css);
+
+.main {
+    margin-top: 12em;
+}
+
+.box {
+    max-width: 55.4em;
+    margin-bottom: 6.4em;
+    padding: 3.2em;
+    background-color: #191919;
+    border-radius: 9px;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.125);
+
+    flex-direction: column;
+    gap: 3.2em;
+}
+
+/* box generator */
+.box--generator label {
+    margin-bottom: 0.8em;
+
+    font-size: 1.6em;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    display: block;
+}
+
+.box--generator input {
+    width: 100%;
+    padding: 0.6em 1.2em;
+    background-color: #2A2A2A;
+    border: solid 2px transparent;
+    border-radius: 9px;
+
+    font-size: 1.6em;
+    color: #EBEBEB;
+}
+
+.box--generator input:focus-visible {
+    box-shadow: 0px 0px 0px 4px #2A2A2A66;
+}
+
+.box--generator__range-box {
+    gap: 2.4em;
+}
+
+.box--generator__checkbox {
+    align-items: center;
+    gap: 0.5em;
+}
+
+.box--generator__checkbox input {
+    max-width: 1.6rem;
+    height: 1.6rem;
+
+    accent-color: #E7A60D;
+}
+
+.box--generator__checkbox label {
+    margin: 0;
+
+    font-size: 1.4em;
+    font-weight: 400;
+}
+
+/* remove the arrows from number input */
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.btn {
+    padding: 0.8em 1.6em;
+    background-color: #E7A60D;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.6em;
+    font-weight: 700;
+    color: #fff;
+
+    cursor: pointer;
+    transition: ease all 0.3s;
+}
+
+.btn:hover {
+    background-color: #f0b731;
+}
+
+/* box results */
+.box--results__back-box {
+    margin-bottom: 1.6rem;
+
+    color: #D4D4D4;
+
+    align-items: center;
+    gap: 0.5em;
+
+    cursor: pointer;
+    transition: ease all 0.3s;
+}
+
+.box--results__back-box span {
+    font-size: 1.40em;
+    font-weight: 500;
+}
+
+.back-icon {
+    font-size: 1.8em;
+}
+
+.box--results__back-box:hover .back-icon,
+.box--results__back-box:hover span {
+    opacity: 0.8;
+}
+
+.header {
+    margin-bottom: 2.4em;
+
+    align-items: center;
+    gap: 1em;
+}
+
+.copy-icon {
+    font-size: 2.2em;
+    color: #3E3E3E;
+
+    cursor: pointer;
+    transition: ease all 0.3s;
+}
+
+.copy-icon:hover {
+    opacity: 0.6;
+}
+
+.numbers-box {
+    height: 22.4em;
+    padding: 0 1.6em;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.4em;
+
+    overflow-y: auto;
+}
+
+/* scroll */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #2A2A2A;
+    border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #3E3E3E;
+    border-radius: 50px;
+}
+
+.circle {
+    width: 6.4rem;
+    height: 6.4rem;
+    border: solid 2px #E7A60D;
+    border-radius: 50%;
+    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.125);
+
+    font-size: 2.4em;
+    font-weight: 500;
+
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+    transition: ease all 0.3s;
+}
+
+.circle:hover {
+    background-color: #E7A60D;
+
+    color: #191919;
+
+    transform: scale(90%);
+}
+
+/* ads */
+.ad-box {
+    width: 38.8em;
+    height: 12.8em;
+    margin-bottom: 16.8em;
+    background-color: #191919;
+
+    color: #D4D4D4;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* footer */
+.footer {
+    width: 100%;
+    padding: 2.4em 0;
+    background-color: #2A2A2A;
+    border-top: solid 1px #3E3E3E;
+
+    text-align: center;
+    color: #D4D4D4;
+
+    position: absolute;
+    bottom: 0;
+}
+
+.creator-info {
+    margin: 0 0 0.8rem;
+
+    font-size: 1.2em;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+}
+
+.github-icon {
+    font-size: 3.2em;
+    color: #D4D4D4;
+
+    transition: ease all 0.1s;
+}
+
+.github-icon:hover {
+    opacity: 0.8;
+}
+
+/* copy warning */
+.warning {
+    padding: 0.4em 0.8em;
+    background-color: #191919;
+    border-radius: 9px;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.125);
+
+    font-size: 1.6em;
+    color: #EBEBEB;
+
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+
+    position: absolute;
+    top: 3.6rem;
+
+    transition: ease all 0.5s;
+}
+
+.warning .checkmark-icon {
+    font-size: 1.4em;
+    color: #2a9d8f;
+}
+
+
+.warning .error-icon {
+    font-size: 1.4em;
+    color: #ef233c;
+}
