@@ -6,7 +6,7 @@
 
 .box {
     max-width: 55.4em;
-    margin-bottom: 6.4em;
+    margin-bottom: 3.2em;
     padding: 3.2em;
     background-color: #191919;
     border-radius: 9px;
@@ -161,29 +161,70 @@ input[type='number']::-webkit-outer-spin-button {
     border-radius: 50px;
 }
 
-.circle {
-    width: 6.4rem;
-    height: 6.4rem;
+.circle--number {
     border: solid 2px #E7A60D;
-    border-radius: 50%;
-    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.125);
-
-    font-size: 2.4em;
-    font-weight: 500;
-
-    justify-content: center;
-    align-items: center;
 
     cursor: pointer;
-    transition: ease all 0.3s;
 }
 
-.circle:hover {
+.circle--number:hover {
     background-color: #E7A60D;
 
     color: #191919;
 
     transform: scale(90%);
+}
+
+/* info-box */
+.info-box {
+    max-width: 55.4em;
+
+    text-align: center;
+
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.6em;
+}
+
+.subtitle {
+    font-size: 1.6em;
+    font-weight: 600;
+    color: #E7A60D;
+}
+
+.recommendations {
+    max-width: 55.4em;
+    margin-top: 2.4em;
+
+    justify-content: space-between;
+    align-items: center;
+    gap: 2.4em;
+}
+
+.recommendations__item {
+    width: 16em;
+
+    flex-direction: column;
+    align-items: center;
+    gap: 1.6em;
+}
+
+.recommendations__icon {
+    font-size: 1.6em;
+}
+
+.recommendations__text {
+    font-size: 1.4em;
+    font-weight: 400;
+    text-align: center;
+    color: #D4D4D4;
+}
+
+.recommendations__item .circle--recommendation {
+    width: 8.4rem;
+    height: 8.4rem;
+    background-color: #191919;
 }
 
 /* ads */
@@ -206,21 +247,27 @@ input[type='number']::-webkit-outer-spin-button {
 }
 
 .creator-info {
-    margin: 0 0 0.8rem;
+    margin-bottom: 1.6rem;
 
     font-size: 1.2em;
     letter-spacing: 0.4px;
     text-transform: uppercase;
 }
 
-.github-icon {
+.footer__links {
+    justify-content: center;
+    align-items: center;
+    gap: 1.6em;
+}
+
+.media-icon {
     font-size: 3.2em;
     color: #D4D4D4;
 
     transition: ease all 0.1s;
 }
 
-.github-icon:hover {
+.media-icon:hover {
     opacity: 0.8;
 }
 
@@ -248,7 +295,6 @@ input[type='number']::-webkit-outer-spin-button {
     font-size: 1.4em;
     color: #2a9d8f;
 }
-
 
 .warning .error-icon {
     font-size: 1.4em;

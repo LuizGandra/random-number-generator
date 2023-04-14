@@ -54,11 +54,35 @@
             </header>
             <div class="numbers-box flex" id="numbers-box">
                 <template id="result-template">
-                    <div class="circle flex">
+                    <div class="circle circle--number flex">
                     </div>
                 </template>
             </div>
         </section>
+        <div class="info-box flex">
+            <span class="subtitle">STEP BY STEP</span>
+            <h2 class="secundary-title">Get random numbers easily!</h2>
+            <div class="recommendations flex">
+                <div class="recommendations__item flex">
+                    <div class="circle circle--recommendation flex">
+                        <ion-icon name="cellular-outline" class="recommendations__icon"></ion-icon>
+                    </div>
+                    <p class="recommendations__text">What is the min and max value?</p>
+                </div>
+                <div class="recommendations__item flex">
+                    <div class="circle circle--recommendation flex">
+                        <ion-icon name="add-circle-outline" class="recommendations__icon"></ion-icon>
+                    </div>
+                    <p class="recommendations__text">How many numbers do you want?</p>
+                </div>
+                <div class="recommendations__item flex">
+                    <div class="circle circle--recommendation flex">
+                        <ion-icon name="repeat-outline" class="recommendations__icon"></ion-icon>
+                    </div>
+                    <p class="recommendations__text">Can it have repeated numbers?</p>
+                </div>
+            </div>
+        </div>
     </main>
     <div class="warning invisible" id="copy-warning">
         <ion-icon name="checkmark-circle" class="checkmark-icon"></ion-icon>
@@ -80,9 +104,14 @@
     </aside>
     <footer class="footer">
         <p class="creator-info">Created by Luiz Gandra</p>
-        <a href="https://github.com/LuizGandra" target="_blank">
-            <ion-icon class="github-icon" name="logo-github"></ion-icon>
-        </a>
+        <div class="footer__links flex">
+            <a href="https://github.com/LuizGandra" target="_blank">
+                <ion-icon class="media-icon" name="logo-github"></ion-icon>
+            </a>
+            <a href="https://medium.com/@luiz.gandra" target="_blank">
+                <ion-icon class="media-icon" name="logo-medium"></ion-icon>
+            </a>
+        </div>
     </footer>
     <script src="./app/js/script.js" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>

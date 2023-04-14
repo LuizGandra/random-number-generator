@@ -13,8 +13,29 @@
         font-size: 2.66rem;
     }
 
+    .secundary-title {
+        font-size: 2rem;
+    }
+
     .main {
         padding: 0 2rem;
+    }
+
+    .recommendations {
+        gap: 1.778em;
+    }
+
+    .recommendations__item {
+        width: 10em;
+    }
+
+    .recommendations__icon {
+        font-size: 1.556em !important;
+    }
+
+    .recommendations__item .circle--recomendation {
+        width: 3.556em !important;
+        height: 3.556em !important;
     }
 
     .ad-box {
@@ -29,6 +50,15 @@
 @media (max-width: 29.375em) {
     .primary-title {
         font-size: 2rem;
+    }
+
+    .recommendations {
+        gap: 0.889em;
+    }
+
+    .recommendations .recommendations__item .circle--recomendation {
+        width: 2.667em !important;
+        height: 2.667em !important;
     }
 
     .warning {
